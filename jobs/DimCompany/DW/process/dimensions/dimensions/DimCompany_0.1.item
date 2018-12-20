@@ -705,7 +705,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="output_table1" minimized="true">
         <mapperTableEntries name="sk_companyid" expression="Numeric.sequence(&quot;sk_companyid&quot;,1,1) " type="id_Integer"/>
@@ -1223,7 +1223,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfoutput_table1" minimized="true">
         <mapperTableEntries name="sk_companyid" expression="Numeric.sequence(&quot;sk_companyid&quot;,1,1) " type="id_Integer"/>
@@ -1351,7 +1351,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out_dimessages">
         <mapperTableEntries name="messagedateandtime" expression="new Date()" type="id_Date"/>
@@ -1403,7 +1403,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;data_ware&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimMessages&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DimMessages&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
@@ -1522,7 +1522,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;data_ware&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimCompany&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DimCompany&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="COLUMN_LIST" name="SURROGATE_KEY" value="sk_companyid" show="false"/>
@@ -1535,7 +1535,9 @@
     <elementParameter field="CHECK" name="USE_SAVE_MEM_MODE" value="false"/>
     <elementParameter field="CHECK" name="SOURCE_KEY_INC_NULL" value="false"/>
     <elementParameter field="CHECK" name="USE_L0" value="false" show="false"/>
+    <elementParameter field="TABLE" name="L0_FIELDS" show="false"/>
     <elementParameter field="CHECK" name="USE_L1" value="false" show="false"/>
+    <elementParameter field="TABLE" name="L1_FIELDS" show="false"/>
     <elementParameter field="CHECK" name="ONLY_UPDATE_ACTIVE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_L2" value="true" show="false"/>
     <elementParameter field="TABLE" name="L2_FIELDS" show="false">
@@ -1709,7 +1711,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;data_ware&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimCompany&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DimCompany&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="COLUMN_LIST" name="SURROGATE_KEY" value="sk_companyid" show="false"/>
@@ -1722,7 +1724,9 @@
     <elementParameter field="CHECK" name="USE_SAVE_MEM_MODE" value="false"/>
     <elementParameter field="CHECK" name="SOURCE_KEY_INC_NULL" value="false"/>
     <elementParameter field="CHECK" name="USE_L0" value="false" show="false"/>
+    <elementParameter field="TABLE" name="L0_FIELDS" show="false"/>
     <elementParameter field="CHECK" name="USE_L1" value="false" show="false"/>
+    <elementParameter field="TABLE" name="L1_FIELDS" show="false"/>
     <elementParameter field="CHECK" name="ONLY_UPDATE_ACTIVE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_L2" value="true" show="false"/>
     <elementParameter field="TABLE" name="L2_FIELDS" show="false">

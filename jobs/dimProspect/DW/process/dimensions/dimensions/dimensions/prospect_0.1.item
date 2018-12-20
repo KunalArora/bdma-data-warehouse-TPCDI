@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="staging_dir" prompt="staging_dir?" promptNeeded="false" type="id_String" value="/Users/kunalarora/Desktop/staging/5/Batch1"/>
+    <contextParameter comment="" name="g" prompt="g?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="224" show="false"/>
@@ -108,7 +108,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-192" posY="-64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/kunalarora/Desktop/dwh-talend/Prospect.csv&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/kunalarora/Desktop/staging/5/Batch1/Prospect.csv&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -324,7 +324,7 @@
       <column comment="" key="false" length="-1" name="sk_updaredateid" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="country" expression="row1.country.equals(&quot;&quot;)? null : row1.country" type="id_String"/>
       </varTables>
@@ -424,7 +424,7 @@
       <column comment="" key="false" length="10" name="sk_updatedateid" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT4" type="id_Integer" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="agencyid" expression="out1.agencyid " type="id_String"/>
@@ -785,16 +785,16 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="false" type="id_Boolean"/>
         <mapperTableEntries name="batchid" expression="1" type="id_Integer"/>
-        <mapperTableEntries name="highvalue" expression="((out2.networth != null &amp;&amp; out2.income != null)&amp;&amp;((out2.networth.compareTo(BigDecimal.valueOf(1000000.00)) > 0 ) || (out2.income.compareTo(BigDecimal.valueOf(200000.00)) > 0)) )?&quot;highvalue&quot;:  &quot;&quot; " type="id_String"/>
-        <mapperTableEntries name="expenses" expression="(((out2.numberchildren != null) &amp;&amp; ( out2.numbercreditcards != null)) &amp;&amp; ((out2.numberchildren.compareTo(BigDecimal.valueOf(3)) > 0) || (out2.numbercreditcards.compareTo(BigDecimal.valueOf(5)) > 0)) )?Var.highvalue +&quot;+Expenses&quot;:  Var.highvalue " type="id_String"/>
-        <mapperTableEntries name="boomer" expression="((out2.age != null)&amp;&amp;(out2.age.compareTo(BigDecimal.valueOf(45)) > 0))?Var.expenses+&quot;+Boomer&quot;:  Var.expenses " type="id_String"/>
-        <mapperTableEntries name="moneyalert" expression="(((out2.income != null) &amp;&amp; (out2.creditrating != null) &amp;&amp; (out2.networth != null)) &amp;&amp; ((out2.income.compareTo(BigDecimal.valueOf(5000)) &lt; 0) || (out2.creditrating.compareTo(BigDecimal.valueOf(600)) &lt; 0) || (out2.networth.compareTo(BigDecimal.valueOf(100000)) &lt; 0) ))?Var.boomer +&quot;MoneyAlert&quot;: Var.boomer " type="id_String"/>
-        <mapperTableEntries name="spender" expression="(((out2.numbercar != null)&amp;&amp;(out2.numbercreditcards != null))&amp;&amp;((out2.numbercar.compareTo(BigDecimal.valueOf(3)) > 0) || (out2.numbercreditcards.compareTo(BigDecimal.valueOf(7)) > 0)))?Var.moneyalert+&quot;+Spender&quot;: Var.moneyalert " type="id_String"/>
-        <mapperTableEntries name="inherited" expression="(((out2.age != null)&amp;&amp;(out2.networth != null))&amp;&amp;((out2.age.compareTo(BigDecimal.valueOf(25)) &lt; 0)&amp;&amp;(out2.networth.compareTo(BigDecimal.valueOf(1000000)) > 0)))? Var.spender+&quot;+Inherited&quot;: Var.spender " type="id_String"/>
+        <mapperTableEntries name="highvalue" expression="((out2.networth!=null &amp;&amp; out2.networth.compareTo(BigDecimal.valueOf(1000000)) > 0 ) || (out2.income!=null &amp;&amp; out2.income.compareTo(BigDecimal.valueOf(200000)) > 0)) ? &quot;HighValue&quot; : &quot;&quot; " type="id_String"/>
+        <mapperTableEntries name="expenses" expression="((out2.numberchildren!=null &amp;&amp; out2.numberchildren.compareTo(BigDecimal.valueOf(3)) > 0) || &#xA;(out2.numbercreditcards!=null &amp;&amp; out2.numbercreditcards.compareTo(BigDecimal.valueOf(5))>0))?Var.highvalue +&quot;+Expenses&quot;:  Var.highvalue " type="id_String"/>
+        <mapperTableEntries name="boomer" expression="(out2.age !=null &amp;&amp; out2.age.compareTo(BigDecimal.valueOf(45)) > 0)?Var.expenses+&quot;+Boomer&quot;:  Var.expenses " type="id_String"/>
+        <mapperTableEntries name="moneyalert" expression="((out2.income!=null &amp;&amp; out2.income.compareTo(BigDecimal.valueOf(50000)) &lt; 0) || (out2.creditrating!=null &amp;&amp; out2.creditrating.compareTo(BigDecimal.valueOf(600))&lt;0) || (out2.networth!=null &amp;&amp; out2.networth.compareTo(BigDecimal.valueOf(100000))&lt;0))?Var.boomer +&quot;+MoneyAlert&quot;: Var.boomer " type="id_String"/>
+        <mapperTableEntries name="spender" expression="((out2.numbercar!=null &amp;&amp; out2.numbercar.compareTo(BigDecimal.valueOf(3))>0) || (out2.numbercreditcards!=null &amp;&amp; out2.numbercreditcards.compareTo(BigDecimal.valueOf(7))>0))?Var.moneyalert+&quot;+Spender&quot;: Var.moneyalert " type="id_String"/>
+        <mapperTableEntries name="inherited" expression="((out2.age!=null &amp;&amp; out2.age.compareTo(BigDecimal.valueOf(25))&lt;0) &amp;&amp; (out2.networth!=null &amp;&amp; out2.networth.compareTo(BigDecimal.valueOf(1000000))>0))? Var.spender+&quot;+Inherited&quot;: Var.spender " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out3" minimized="true">
         <mapperTableEntries name="agencyid" expression="out2.agencyid " type="id_String"/>
@@ -881,7 +881,7 @@
         <mapperTableEntries name="Employer" expression="out2.employer " type="id_String" nullable="true"/>
         <mapperTableEntries name="NumberCreditCards" expression="out2.numbercreditcards " type="id_BigDecimal" nullable="true"/>
         <mapperTableEntries name="NetWorth" expression="out2.networth " type="id_BigDecimal" nullable="true"/>
-        <mapperTableEntries name="MarketingNameplate" expression="Var.inherited " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MarketingNameplate" expression="Var.inherited.replaceAll(&quot;^\\+&quot;,&quot;&quot;) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="out2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="agencyid" type="id_String"/>
@@ -914,7 +914,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.staging_dir+&quot;/BatchDate.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/kunalarora/Desktop/staging/5/Batch1/BatchDate.txt&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
@@ -1318,7 +1318,7 @@
       <additionalProperties key="Comment" value=""/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="var1" expression="row2.AgencyID == null ? false : true " type="id_Boolean"/>
       </varTables>
