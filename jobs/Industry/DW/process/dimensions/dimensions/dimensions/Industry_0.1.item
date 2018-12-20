@@ -186,7 +186,7 @@
     <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;datawarehouse&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;data_ware&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Industry&quot;"/>

@@ -67,7 +67,7 @@
         "show" : true,
         "field" : "DIRECTORY",
         "name" : "FILE_PATH",
-        "value" : "\"/home/cmcuza/Documents/school/Data Warehouse/TOS_BD-20181026_1147-V7.1.1/workspace/.metadata\"",
+        "value" : "\"/Applications/TOSBD-7.1.1/studio/workspace/.metadata\"",
         "contextMode" : false
       }, {
         "show" : true,
