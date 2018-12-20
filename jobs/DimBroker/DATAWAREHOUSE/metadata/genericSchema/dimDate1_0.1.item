@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_SiH38PXGEeiQd5QHWK-h3g" comment="connectionComment" label="connectionLabel" dataPackage="_SiH38fXGEeiQd5QHWK-h3g" mappingTypeUsed="true" mappingTypeId="hive_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_SiH38fXGEeiQd5QHWK-h3g" dataManager="_SiH38PXGEeiQd5QHWK-h3g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SiH38vXGEeiQd5QHWK-h3g" id="_TyMYsPXGEeiQd5QHWK-h3g" label="dimDate">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH38_XGEeiQd5QHWK-h3g" name="sk_dateid" id="917" label="sk_dateid" length="10" precision="-1" sourceType="INT" talendType="id_Integer" key="true">
+        <initialValue xmi:id="_SiH39PXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH39fXGEeiQd5QHWK-h3g" name="datevalue" id="918" label="datevalue" length="13" precision="-1" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_SiH39vXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH39_XGEeiQd5QHWK-h3g" name="datedesc" id="919" label="datedesc" length="20" precision="-1" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_SiH3-PXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH3-fXGEeiQd5QHWK-h3g" name="calendaryearid" id="920" label="calendaryearid" length="4" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH3-vXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH3-_XGEeiQd5QHWK-h3g" name="calendaryeardesc" id="921" label="calendaryeardesc" length="20" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH3_PXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH3_fXGEeiQd5QHWK-h3g" name="calendarqtrid" id="922" label="calendarqtrid" length="5" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH3_vXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH3__XGEeiQd5QHWK-h3g" name="calendarqtrdesc" id="923" label="calendarqtrdesc" length="20" precision="-1" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_SiH4APXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4AfXGEeiQd5QHWK-h3g" name="calendarmonthid" id="924" label="calendarmonthid" length="6" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH4AvXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4A_XGEeiQd5QHWK-h3g" name="calendarmonthdesc" id="925" label="calendarmonthdesc" length="20" precision="-1" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_SiH4BPXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4BfXGEeiQd5QHWK-h3g" name="calendarweekid" id="926" label="calendarweekid" length="6" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH4BvXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4B_XGEeiQd5QHWK-h3g" name="calendarweekdesc" id="927" label="calendarweekdesc" length="20" precision="-1" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_SiH4CPXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4CfXGEeiQd5QHWK-h3g" name="dayofweeknum" id="928" label="dayofweeknum" length="1" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH4CvXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4C_XGEeiQd5QHWK-h3g" name="dayofweekdesc" id="929" label="dayofweekdesc" length="10" precision="-1" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_SiH4DPXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4DfXGEeiQd5QHWK-h3g" name="fiscalyearid" id="930" label="fiscalyearid" length="4" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH4DvXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4D_XGEeiQd5QHWK-h3g" name="fiscalyeardesc" id="931" label="fiscalyeardesc" length="20" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH4EPXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4EfXGEeiQd5QHWK-h3g" name="fiscalqtrid" id="932" label="fiscalqtrid" length="5" precision="-1" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_SiH4EvXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4E_XGEeiQd5QHWK-h3g" name="fiscalqtrdesc" id="933" label="fiscalqtrdesc" length="20" precision="-1" sourceType="STRING" talendType="id_String">
+        <initialValue xmi:id="_SiH4FPXGEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SiH4FfXGEeiQd5QHWK-h3g" name="holidayflag" id="934" label="holidayflag" length="1" precision="-1" sourceType="BOOLEAN" talendType="id_Boolean">
+        <initialValue xmi:id="_SiH4FvXGEeiQd5QHWK-h3g"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="staging_dir" prompt="staging_dir?" promptNeeded="false" type="id_String" value="/Users/kunalarora/Desktop/dwh-talend/mysql/Batch1"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="320" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="128" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/Applications/TOSBD-7.1.1/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_zBvVAPWyEeisH-uo_7WXDQ" name="DataOperation"/>
+    <routinesParameter id="_zDsc0PWyEeisH-uo_7WXDQ" name="Mathematical"/>
+    <routinesParameter id="_zAR8cPWyEeisH-uo_7WXDQ" name="Numeric"/>
+    <routinesParameter id="_zC7AwPWyEeisH-uo_7WXDQ" name="Relational"/>
+    <routinesParameter id="_zDS0MPWyEeisH-uo_7WXDQ" name="StringHandling"/>
+    <routinesParameter id="_y-qL0PWyEeisH-uo_7WXDQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_zCfi8PWyEeisH-uo_7WXDQ" name="TalendDate"/>
+    <routinesParameter id="_zBAVMPWyEeisH-uo_7WXDQ" name="TalendStringUtil"/>
+    <routinesParameter id="_zAhNAPWyEeisH-uo_7WXDQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-288" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.staging_dir"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;FINWIRE\\d{4}Q\\d{1}&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputFullRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-192" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputFullRow_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="HEADER" value=""/>
+    <elementParameter field="TEXT" name="FOOTER" value=""/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputFullRow_1">
+      <column key="false" length="255" name="line" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-96" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.line.substring(15,18).equals(&quot;FIN&quot;)&#xA;&#x9;&#x9;&#x9;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFilterRow_1">
+      <column key="false" length="255" name="line" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" name="FILTER">
+      <column key="false" length="255" name="line" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column key="false" length="255" name="line" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tExtractPositionalFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractPositionalFields_1" show="false"/>
+    <elementParameter field="PREV_COLUMN_LIST" name="FIELD" value="line"/>
+    <elementParameter field="CHECK" name="IGNORE_SOURCE_NULL" value="true"/>
+    <elementParameter field="CHECK" name="ADVANCED_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="PATTERN" value="&quot;15,3,4,1,8,8,17,17,12,12,12,17,17,17,13,13,*&quot;"/>
+    <elementParameter field="TABLE" name="FORMATS" show="false">
+      <elementValue elementRef="COLUMN" value="CIK"/>
+      <elementValue elementRef="SIZE" value="10"/>
+      <elementValue elementRef="PADDING_CHAR" value="'0'"/>
+      <elementValue elementRef="ALIGN" value="-1"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="TRIM" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tExtractPositionalFields_1">
+      <column comment="" key="false" length="-1" name="PTS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Yeat" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Quarter" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QtrStartDate" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PostingDate" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Revenue" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Earnings" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EPS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DilutedEPS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Margin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Inventory" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Assets" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Liabilities" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ShOut" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DilutedShOut" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CoNameOrCIK" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="PTS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RecType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Yeat" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Quarter" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QtrStartDate" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PostingDate" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Revenue" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Earnings" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EPS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DilutedEPS" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Margin" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Inventory" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Assets" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Liabilities" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ShOut" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DilutedShOut" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CoNameOrCIK" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="-64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_1" show="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;java.util.Map&lt;String,Float> map = new java.util.HashMap&lt;>();"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#xA;// a piece of code executed in the row&#xA;// loop&#xA;if (globalMap.containsKey(&quot;eps_map&quot;)) {&#xA;&#x9;map = (java.util.Map&lt;String, Float>)globalMap.get(&quot;eps_map&quot;);&#xA;}&#xA;map.put(row3.QtrStartDate, Float.parseFloat(row3.EPS));&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;globalMap.put(&quot;eps_map&quot;, map);"/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_1"/>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.staging_dir + &quot;/DailyMarket.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/Applications/TOSBD-7.1.1/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mvXfAPZjEeisH-uo_7WXDQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;data_ware&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_mvXfAPZjEeisH-uo_7WXDQ - DimSecurity" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DimSecurity&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `DimSecurity`.`SK_SecurityID`, &#xA;  `DimSecurity`.`Symbol`, &#xA;  `DimSecurity`.`Issue`, &#xA;  `DimSecurity`.`Status`, &#xA;  `DimSecurity`.`Name`, &#xA;  `DimSecurity`.`ExchangeID`, &#xA;  `DimSecurity`.`SK_CompanyID`, &#xA;  `DimSecurity`.`SharesOutstanding`, &#xA;  `DimSecurity`.`FirstTrade`, &#xA;  `DimSecurity`.`FirstTradeOnExchange`, &#xA;  `DimSecurity`.`Dividend`, &#xA;  `DimSecurity`.`IsCurrent`, &#xA;  `DimSecurity`.`BatchID`, &#xA;  `DimSecurity`.`EffectiveDate`, &#xA;  `DimSecurity`.`EndDate`&#xA;FROM `DimSecurity`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_SecurityID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Symbol"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Issue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Status"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ExchangeID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SK_CompanyID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SharesOutstanding"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstTrade"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstTradeOnExchange"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Dividend"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IsCurrent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BatchID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EffectiveDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EndDate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="DimSecurity" name="tDBInput_1">
+      <column comment="" key="true" length="10" name="SK_SecurityID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="Symbol" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="Issue" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="Name" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="ExchangeID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SK_CompanyID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SharesOutstanding" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTrade" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTradeOnExchange" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="Dividend" nullable="false" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="IsCurrent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="BatchID" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EffectiveDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EndDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FRttUPcwEeiTHtC6rtIAPA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out2" name="out2">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="SK_SecurityID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="Symbol" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="Issue" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="Name" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="ExchangeID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SK_CompanyID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SharesOutstanding" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTrade" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTradeOnExchange" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="Dividend" nullable="false" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="IsCurrent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="BatchID" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EffectiveDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="yield" nullable="false" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="EndDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="FLOW" label="test" name="test">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="SK_SecurityID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="Symbol" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="Issue" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="Name" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="ExchangeID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SK_CompanyID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SharesOutstanding" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTrade" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTradeOnExchange" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="Dividend" nullable="false" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="IsCurrent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="BatchID" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EffectiveDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="yield" nullable="false" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="EndDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="yield" expression="security_in.Dividend * 100.0d / (daily_market.DM_CLOSE * 1.0d) " type="id_Double"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries name="DM_DATE" expression="daily_market.DM_DATE " type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" expression="daily_market.DM_S_SYMB " type="id_String"/>
+        <mapperTableEntries name="DM_CLOSE" expression="daily_market.DM_CLOSE " type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" expression="daily_market.DM_HIGH " type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" expression="daily_market.DM_LOW " type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" expression="daily_market.DM_VOL " type="id_Double"/>
+        <mapperTableEntries name="SK_SecurityID" expression="security_in.SK_SecurityID " type="id_Integer"/>
+        <mapperTableEntries name="Symbol" expression="security_in.Symbol " type="id_String"/>
+        <mapperTableEntries name="Issue" expression="security_in.Issue " type="id_String"/>
+        <mapperTableEntries name="Status" expression="security_in.Status " type="id_String"/>
+        <mapperTableEntries name="Name" expression="security_in.Name " type="id_String"/>
+        <mapperTableEntries name="ExchangeID" expression="security_in.ExchangeID " type="id_String"/>
+        <mapperTableEntries name="SK_CompanyID" expression="security_in.SK_CompanyID " type="id_Integer"/>
+        <mapperTableEntries name="SharesOutstanding" expression="security_in.SharesOutstanding " type="id_Integer"/>
+        <mapperTableEntries name="FirstTrade" expression="security_in.FirstTrade " type="id_Date"/>
+        <mapperTableEntries name="FirstTradeOnExchange" expression="security_in.FirstTradeOnExchange " type="id_Date"/>
+        <mapperTableEntries name="Dividend" expression="security_in.Dividend " type="id_Double"/>
+        <mapperTableEntries name="IsCurrent" expression="security_in.IsCurrent " type="id_Boolean"/>
+        <mapperTableEntries name="BatchID" expression="security_in.BatchID " type="id_BigDecimal"/>
+        <mapperTableEntries name="EffectiveDate" expression="security_in.EffectiveDate " type="id_Date"/>
+        <mapperTableEntries name="yield" expression="Var.yield " type="id_Double"/>
+        <mapperTableEntries name="EndDate" expression="security_in.EndDate " type="id_Date"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="test" minimized="true">
+        <mapperTableEntries name="DM_DATE" expression="daily_market.DM_DATE  " type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" expression="daily_market.DM_S_SYMB  " type="id_String"/>
+        <mapperTableEntries name="DM_CLOSE" expression="daily_market.DM_CLOSE  " type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" expression="daily_market.DM_HIGH  " type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" expression="daily_market.DM_LOW  " type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" expression="daily_market.DM_VOL  " type="id_Double"/>
+        <mapperTableEntries name="SK_SecurityID" expression="security_in.SK_SecurityID  " type="id_Integer"/>
+        <mapperTableEntries name="Symbol" expression="security_in.Symbol  " type="id_String"/>
+        <mapperTableEntries name="Issue" expression="security_in.Issue  " type="id_String"/>
+        <mapperTableEntries name="Status" expression="security_in.Status  " type="id_String"/>
+        <mapperTableEntries name="Name" expression="security_in.Name  " type="id_String"/>
+        <mapperTableEntries name="ExchangeID" expression="security_in.ExchangeID  " type="id_String"/>
+        <mapperTableEntries name="SK_CompanyID" expression="security_in.SK_CompanyID  " type="id_Integer"/>
+        <mapperTableEntries name="SharesOutstanding" expression="security_in.SharesOutstanding  " type="id_Integer"/>
+        <mapperTableEntries name="FirstTrade" expression="security_in.FirstTrade  " type="id_Date"/>
+        <mapperTableEntries name="FirstTradeOnExchange" expression="security_in.FirstTradeOnExchange  " type="id_Date"/>
+        <mapperTableEntries name="Dividend" expression="security_in.Dividend  " type="id_Double"/>
+        <mapperTableEntries name="IsCurrent" expression="security_in.IsCurrent  " type="id_Boolean"/>
+        <mapperTableEntries name="BatchID" expression="security_in.BatchID  " type="id_BigDecimal"/>
+        <mapperTableEntries name="EffectiveDate" expression="security_in.EffectiveDate  " type="id_Date"/>
+        <mapperTableEntries name="yield" expression="Var.yield  " type="id_Double"/>
+        <mapperTableEntries name="EndDate" expression="security_in.EndDate  " type="id_Date"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="daily_market" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DM_DATE" type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" type="id_String"/>
+        <mapperTableEntries name="DM_CLOSE" type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" type="id_Double"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="security_in" expressionFilter="daily_market.DM_DATE.compareTo(security_in.EffectiveDate) >= 0 &amp;&amp;&#xA;daily_market.DM_DATE.compareTo(security_in.EndDate) &lt; 0" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true" persistent="true">
+        <mapperTableEntries name="SK_SecurityID" type="id_Integer"/>
+        <mapperTableEntries name="Symbol" expression="daily_market.DM_S_SYMB " type="id_String" operator="="/>
+        <mapperTableEntries name="Issue" type="id_String"/>
+        <mapperTableEntries name="Status" type="id_String"/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="ExchangeID" type="id_String"/>
+        <mapperTableEntries name="SK_CompanyID" type="id_Integer"/>
+        <mapperTableEntries name="SharesOutstanding" type="id_Integer"/>
+        <mapperTableEntries name="FirstTrade" type="id_Date"/>
+        <mapperTableEntries name="FirstTradeOnExchange" type="id_Date"/>
+        <mapperTableEntries name="Dividend" type="id_Double"/>
+        <mapperTableEntries name="IsCurrent" type="id_Boolean"/>
+        <mapperTableEntries name="BatchID" type="id_BigDecimal"/>
+        <mapperTableEntries name="EffectiveDate" type="id_Date"/>
+        <mapperTableEntries name="EndDate" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FRttUPcwEeiTHtC6rtIAPA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="in">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="SK_SecurityID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="Symbol" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="Issue" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="Status" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="70" name="Name" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="ExchangeID" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SK_CompanyID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="SharesOutstanding" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTrade" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="FirstTradeOnExchange" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="22" name="Dividend" nullable="false" pattern="" precision="0" sourceType="DOUBLE" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="IsCurrent" nullable="false" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="BatchID" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="EffectiveDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="-1" name="yield" nullable="false" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="EndDate" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="sk_dateid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="in">
+        <mapperTableEntries name="DM_DATE" expression="out2.DM_DATE " type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" expression="out2.DM_S_SYMB " type="id_String"/>
+        <mapperTableEntries name="DM_CLOSE" expression="out2.DM_CLOSE " type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" expression="out2.DM_HIGH " type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" expression="out2.DM_LOW " type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" expression="out2.DM_VOL " type="id_Double"/>
+        <mapperTableEntries name="SK_SecurityID" expression="out2.SK_SecurityID " type="id_Integer"/>
+        <mapperTableEntries name="Symbol" expression="out2.Symbol " type="id_String"/>
+        <mapperTableEntries name="Issue" expression="out2.Issue " type="id_String"/>
+        <mapperTableEntries name="Status" expression="out2.Status " type="id_String"/>
+        <mapperTableEntries name="Name" expression="out2.Name " type="id_String"/>
+        <mapperTableEntries name="ExchangeID" expression="out2.ExchangeID " type="id_String"/>
+        <mapperTableEntries name="SK_CompanyID" expression="out2.SK_CompanyID " type="id_Integer"/>
+        <mapperTableEntries name="SharesOutstanding" expression="out2.SharesOutstanding " type="id_Integer"/>
+        <mapperTableEntries name="FirstTrade" expression="out2.FirstTrade " type="id_Date"/>
+        <mapperTableEntries name="FirstTradeOnExchange" expression="out2.FirstTradeOnExchange " type="id_Date"/>
+        <mapperTableEntries name="Dividend" expression="out2.Dividend " type="id_Double"/>
+        <mapperTableEntries name="IsCurrent" expression="out2.IsCurrent " type="id_Boolean"/>
+        <mapperTableEntries name="BatchID" expression="out2.BatchID " type="id_BigDecimal"/>
+        <mapperTableEntries name="EffectiveDate" expression="out2.EffectiveDate " type="id_Date"/>
+        <mapperTableEntries name="yield" expression="out2.yield " type="id_Double"/>
+        <mapperTableEntries name="EndDate" expression="out2.EndDate " type="id_Date"/>
+        <mapperTableEntries name="sk_dateid" expression="date_in.sk_dateid " type="id_Integer"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DM_DATE" type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" type="id_String"/>
+        <mapperTableEntries name="DM_CLOSE" type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" type="id_Double"/>
+        <mapperTableEntries name="SK_SecurityID" type="id_Integer"/>
+        <mapperTableEntries name="Symbol" type="id_String"/>
+        <mapperTableEntries name="Issue" type="id_String"/>
+        <mapperTableEntries name="Status" type="id_String"/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="ExchangeID" type="id_String"/>
+        <mapperTableEntries name="SK_CompanyID" type="id_Integer"/>
+        <mapperTableEntries name="SharesOutstanding" type="id_Integer"/>
+        <mapperTableEntries name="FirstTrade" type="id_Date"/>
+        <mapperTableEntries name="FirstTradeOnExchange" type="id_Date"/>
+        <mapperTableEntries name="Dividend" type="id_Double"/>
+        <mapperTableEntries name="IsCurrent" type="id_Boolean"/>
+        <mapperTableEntries name="BatchID" type="id_BigDecimal"/>
+        <mapperTableEntries name="EffectiveDate" type="id_Date"/>
+        <mapperTableEntries name="yield" type="id_Double"/>
+        <mapperTableEntries name="EndDate" type="id_Date"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="date_in" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" persistent="true">
+        <mapperTableEntries name="sk_dateid" type="id_Integer"/>
+        <mapperTableEntries name="datevalue" expression="out2.DM_DATE " type="id_Date" operator="="/>
+        <mapperTableEntries name="datedesc" type="id_String"/>
+        <mapperTableEntries name="calendaryearid" type="id_BigDecimal"/>
+        <mapperTableEntries name="calendaryeardesc" type="id_String"/>
+        <mapperTableEntries name="calendarqtrid" type="id_BigDecimal"/>
+        <mapperTableEntries name="calendarqtrdesc" type="id_String"/>
+        <mapperTableEntries name="calendarmonthid" type="id_BigDecimal"/>
+        <mapperTableEntries name="calendarmonthdesc" type="id_String"/>
+        <mapperTableEntries name="calendarweekid" type="id_BigDecimal"/>
+        <mapperTableEntries name="calendarweekdesc" type="id_String"/>
+        <mapperTableEntries name="dayofweeknumeric" type="id_BigDecimal"/>
+        <mapperTableEntries name="dayofweekdesc" type="id_String"/>
+        <mapperTableEntries name="fiscalyearid" type="id_BigDecimal"/>
+        <mapperTableEntries name="fiscalyeardesc" type="id_String"/>
+        <mapperTableEntries name="fiscalqtrid" type="id_BigDecimal"/>
+        <mapperTableEntries name="fiscalqtrdesc" type="id_String"/>
+        <mapperTableEntries name="holidayflag" type="id_Boolean" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_mvXfAPZjEeisH-uo_7WXDQ" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;data_ware&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dimDate&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  `dimDate`.`sk_dateid`, &#xA;  `dimDate`.`datevalue`, &#xA;  `dimDate`.`datedesc`, &#xA;  `dimDate`.`calendaryearid`, &#xA;  `dimDate`.`calendaryeardesc`, &#xA;  `dimDate`.`calendarqtrid`, &#xA;  `dimDate`.`calendarqtrdesc`, &#xA;  `dimDate`.`calendarmonthid`, &#xA;  `dimDate`.`calendarmonthdesc`, &#xA;  `dimDate`.`calendarweekid`, &#xA;  `dimDate`.`calendarweekdesc`, &#xA;  `dimDate`.`dayofweeknumeric`, &#xA;  `dimDate`.`dayofweekdesc`, &#xA;  `dimDate`.`fiscalyearid`, &#xA;  `dimDate`.`fiscalyeardesc`, &#xA;  `dimDate`.`fiscalqtrid`, &#xA;  `dimDate`.`fiscalqtrdesc`, &#xA;  `dimDate`.`holidayflag`&#xA;FROM `dimDate`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="sk_dateid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datevalue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="datedesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendaryearid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendaryeardesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendarqtrid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendarqtrdesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendarmonthid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendarmonthdesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendarweekid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calendarweekdesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dayofweeknumeric"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dayofweekdesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fiscalyearid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fiscalyeardesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fiscalqtrid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fiscalqtrdesc"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="holidayflag"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dimDate" name="tDBInput_2">
+      <column comment="" key="true" length="10" name="sk_dateid" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="datevalue" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="datedesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="calendaryearid" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="calendaryeardesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="calendarqtrid" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="calendarqtrdesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="calendarmonthid" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="calendarmonthdesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="6" name="calendarweekid" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="calendarweekdesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="dayofweeknumeric" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="dayofweekdesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="4" name="fiscalyearid" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="fiscalyeardesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="5" name="fiscalqtrid" nullable="false" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="fiscalqtrdesc" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="holidayflag" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FRttUPcwEeiTHtC6rtIAPA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="temp_data">
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="HIGH_52" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="LOW_52" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="HIGH_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PERatio" nullable="false" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LOW_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Yield" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Year" expression="TalendDate.getPartOfDate(&quot;YEAR&quot;,in.DM_DATE) " type="id_Integer"/>
+        <mapperTableEntries name="Month" expression="TalendDate.getPartOfDate(&quot;MONTH&quot;,in.DM_DATE) " type="id_Integer"/>
+        <mapperTableEntries name="Quarter" expression="(int)((Var.Month + 2) / 3) " type="id_Integer"/>
+        <mapperTableEntries name="QtrStartMonth" expression="3*Var.Quarter-2 " type="id_Integer"/>
+        <mapperTableEntries name="QtrStartDate1" expression="String.valueOf(Var.Year)+String.valueOf(Var.QtrStartMonth)+&quot;01&quot; " type="id_String"/>
+        <mapperTableEntries name="QtrStartDate2" expression="(Var.Quarter-1) == 0 ? String.valueOf(Var.Year-1)+&quot;10&quot;+&quot;01&quot; : String.valueOf(Var.Year)+String.valueOf(Var.QtrStartMonth-3)+&quot;01&quot; " type="id_String"/>
+        <mapperTableEntries name="QtrStartDate3" expression="(Var.Quarter-2) &lt;= 0 ? String.valueOf(Var.Year-1)+(Var.Quarter==1 ? &quot;07&quot;:&quot;10&quot;)+&quot;01&quot; : String.valueOf(Var.Year)+String.valueOf(Var.QtrStartMonth-6)+&quot;01&quot; " type="id_String"/>
+        <mapperTableEntries name="QtrStartDate4" expression="String.valueOf(Var.Year3)+String.valueOf(Var.Month3)+&quot;01&quot; " type="id_String"/>
+        <mapperTableEntries name="Month3" expression="(3*Var.Quarter3)-2 " type="id_Integer"/>
+        <mapperTableEntries name="Year3" expression="(Var.Quarter-3) &lt;= 0 ? Var.Year-1 : Var.Year " type="id_Integer"/>
+        <mapperTableEntries name="Quarter3" expression="(Var.Quarter != 4) ? Var.Quarter+1 : 1 " type="id_Integer"/>
+        <mapperTableEntries name="epsTotal" expression="(Var.eps1+Var.eps2+Var.eps3+Var.eps4) " type="id_Float"/>
+        <mapperTableEntries name="eps1" expression="((java.util.Map&lt;String,Float>)globalMap.get(&quot;eps_map&quot;)).get(Var.QtrStartDate1) " type="id_Float"/>
+        <mapperTableEntries name="eps2" expression="((java.util.Map&lt;String,Float>)globalMap.get(&quot;eps_map&quot;)).get(Var.QtrStartDate2) " type="id_Float"/>
+        <mapperTableEntries name="eps3" expression="((java.util.Map&lt;String,Float>)globalMap.get(&quot;eps_map&quot;)).get(Var.QtrStartDate3) " type="id_Float"/>
+        <mapperTableEntries name="eps4" expression="((java.util.Map&lt;String,Float>)globalMap.get(&quot;eps_map&quot;)).get(Var.QtrStartDate4) " type="id_Float"/>
+        <mapperTableEntries name="Yield" expression="(in.Dividend/in.DM_CLOSE)*100 " type="id_Double"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="temp_data">
+        <mapperTableEntries name="DM_S_SYMB" expression="hist.DM_S_SYMB " type="id_String"/>
+        <mapperTableEntries name="DM_DATE" expression="hist.DM_DATE " type="id_Date"/>
+        <mapperTableEntries name="HIGH_52" expression="hist.HIGH_52 " type="id_Double"/>
+        <mapperTableEntries name="LOW_52" expression="hist.LOW_52 " type="id_Double"/>
+        <mapperTableEntries name="HIGH_DATE" expression="hist.HIGH_DATE " type="id_Date"/>
+        <mapperTableEntries name="PERatio" expression="0.00000000 " type="id_Double"/>
+        <mapperTableEntries name="LOW_DATE" expression="hist.LOW_DATE " type="id_Date"/>
+        <mapperTableEntries name="DM_CLOSE" expression="in.DM_CLOSE " type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" expression="in.DM_HIGH " type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" expression="in.DM_LOW " type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" expression="in.DM_VOL " type="id_Double"/>
+        <mapperTableEntries name="Yield" expression="Var.Yield " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="in" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DM_DATE" type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" type="id_String"/>
+        <mapperTableEntries name="DM_CLOSE" type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" type="id_Double"/>
+        <mapperTableEntries name="SK_SecurityID" type="id_Integer"/>
+        <mapperTableEntries name="Symbol" type="id_String"/>
+        <mapperTableEntries name="Issue" type="id_String"/>
+        <mapperTableEntries name="Status" type="id_String"/>
+        <mapperTableEntries name="Name" type="id_String"/>
+        <mapperTableEntries name="ExchangeID" type="id_String"/>
+        <mapperTableEntries name="SK_CompanyID" type="id_Integer"/>
+        <mapperTableEntries name="SharesOutstanding" type="id_Integer"/>
+        <mapperTableEntries name="FirstTrade" type="id_Date"/>
+        <mapperTableEntries name="FirstTradeOnExchange" type="id_Date"/>
+        <mapperTableEntries name="Dividend" type="id_Double"/>
+        <mapperTableEntries name="IsCurrent" type="id_Boolean"/>
+        <mapperTableEntries name="BatchID" type="id_BigDecimal"/>
+        <mapperTableEntries name="EffectiveDate" type="id_Date"/>
+        <mapperTableEntries name="yield" type="id_Double"/>
+        <mapperTableEntries name="EndDate" type="id_Date"/>
+        <mapperTableEntries name="sk_dateid" type="id_Integer"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="hist" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="DM_S_SYMB" expression="in.DM_S_SYMB " type="id_String" operator="="/>
+        <mapperTableEntries name="DM_DATE" expression="in.DM_DATE " type="id_Date" operator="="/>
+        <mapperTableEntries name="HIGH_52" type="id_Double"/>
+        <mapperTableEntries name="LOW_52" type="id_Double"/>
+        <mapperTableEntries name="HIGH_DATE" type="id_Date"/>
+        <mapperTableEntries name="LOW_DATE" type="id_Date"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.staging_dir + &quot;/DailyMarket.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value="500000"/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/Applications/TOSBD-7.1.1/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_2">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FRttUPcwEeiTHtC6rtIAPA-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="cart" name="cart">
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="cart">
+        <mapperTableEntries name="DM_S_SYMB" expression="daily_market_in1.DM_S_SYMB " type="id_String"/>
+        <mapperTableEntries name="DM_DATE" expression="daily_market_in1.DM_DATE " type="id_Date"/>
+        <mapperTableEntries name="DM_HIGH" expression="daily_market_in2.DM_HIGH " type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" expression="daily_market_in2.DM_LOW " type="id_Double"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="daily_market_in1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DM_DATE" type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" type="id_String"/>
+        <mapperTableEntries name="DM_CLOSE" type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" type="id_Double"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="daily_market_in2" expressionFilter="TalendDate.compareDate(daily_market_in1.DM_DATE,daily_market_in2.DM_DATE) >= 0 &amp;&amp; TalendDate.compareDate(daily_market_in1.DM_DATE,TalendDate.addDate(daily_market_in2.DM_DATE,52*7,&quot;dd&quot;)) &lt; 0" activateExpressionFilter="true" activateCondensedTool="true" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="DM_DATE" type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" expression="daily_market_in1.DM_S_SYMB " type="id_String" operator="="/>
+        <mapperTableEntries name="DM_CLOSE" type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.staging_dir + &quot;/DailyMarket.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value="500000"/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/Applications/TOSBD-7.1.1/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_3">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tAggregateRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tAggregateRow_2" show="false"/>
+    <elementParameter field="TABLE" name="GROUPBYS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="INPUT_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="INPUT_COLUMN" value="DM_DATE"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS">
+      <elementValue elementRef="OUTPUT_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="FUNCTION" value="max"/>
+      <elementValue elementRef="INPUT_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+      <elementValue elementRef="OUTPUT_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="FUNCTION" value="min"/>
+      <elementValue elementRef="INPUT_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="IGNORE_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIST_DELIMITER" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="USE_FINANCIAL_PRECISION" value="true"/>
+    <elementParameter field="CHECK" name="CHECK_TYPE_OVERFLOW" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_ULP" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="cart" name="tAggregateRow_2">
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="608" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_7" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_FRttUPcwEeiTHtC6rtIAPA-tMap_7-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="hist">
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="HIGH_52" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="LOW_52" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="HIGH_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LOW_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="hist">
+        <mapperTableEntries name="DM_S_SYMB" expression="agg.DM_S_SYMB " type="id_String"/>
+        <mapperTableEntries name="DM_DATE" expression="agg.DM_DATE " type="id_Date"/>
+        <mapperTableEntries name="HIGH_52" expression="agg.DM_HIGH " type="id_Double"/>
+        <mapperTableEntries name="LOW_52" expression="agg.DM_LOW " type="id_Double"/>
+        <mapperTableEntries name="HIGH_DATE" expression="high.DM_DATE " type="id_Date"/>
+        <mapperTableEntries name="LOW_DATE" expression="low.DM_DATE " type="id_Date"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="agg" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="DM_S_SYMB" type="id_String"/>
+        <mapperTableEntries name="DM_DATE" type="id_Date"/>
+        <mapperTableEntries name="DM_HIGH" type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" type="id_Double"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="high" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" persistent="true">
+        <mapperTableEntries name="DM_DATE" expression=" " type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" expression="agg.DM_S_SYMB " type="id_String" operator="="/>
+        <mapperTableEntries name="DM_CLOSE" expression="" type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" expression="agg.DM_HIGH " type="id_Double" operator="="/>
+        <mapperTableEntries name="DM_LOW" type="id_Double"/>
+        <mapperTableEntries name="DM_VOL" type="id_Double"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="low" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" persistent="true">
+        <mapperTableEntries name="DM_DATE" expression=" " type="id_Date"/>
+        <mapperTableEntries name="DM_S_SYMB" expression="agg.DM_S_SYMB " type="id_String" operator="="/>
+        <mapperTableEntries name="DM_CLOSE" type="id_Double"/>
+        <mapperTableEntries name="DM_HIGH" type="id_Double"/>
+        <mapperTableEntries name="DM_LOW" expression="agg.DM_LOW " type="id_Double" operator="="/>
+        <mapperTableEntries name="DM_VOL" type="id_Double"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.staging_dir + &quot;/DailyMarket.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/Applications/TOSBD-7.1.1/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_5">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.staging_dir + &quot;/DailyMarket.txt&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;/Applications/TOSBD-7.1.1/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_4">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_S_SYMB"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HIGH_52"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOW_52"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HIGH_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PERatio"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOW_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_CLOSE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_HIGH"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DM_VOL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Yield"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="15" name="DM_S_SYMB" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DM_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="HIGH_52" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="LOW_52" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="HIGH_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PERatio" nullable="false" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LOW_DATE" nullable="false" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="BPCHAR" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_CLOSE" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_HIGH" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DM_LOW" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="DM_VOL" nullable="false" pattern="" precision="0" sourceType="BPCHAR" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Yield" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputFullRow_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputFullRow_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputFullRow_1" target="tFilterRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FILTER" label="row2" lineStyle="0" metaname="tFilterRow_1" offsetLabelX="0" offsetLabelY="0" source="tFilterRow_1" target="tExtractPositionalFields_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tExtractPositionalFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractPositionalFields_1" target="tJavaFlex_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tFileInputDelimited_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="daily_market" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="daily_market" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="security_in" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="security_in" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="yield"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="in" lineStyle="0" metaname="in" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="in" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="date_in" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="date_in" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="temp_data" lineStyle="0" metaname="temp_data" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Yield"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="temp_data" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="daily_market_in1" lineStyle="0" metaname="tFileInputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_2" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="daily_market_in1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="cart" lineStyle="0" metaname="cart" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tAggregateRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DM_LOW"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="cart" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="daily_market_in2" lineStyle="8" metaname="tFileInputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_3" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="daily_market_in2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="agg" lineStyle="0" metaname="tAggregateRow_2" offsetLabelX="0" offsetLabelY="0" source="tAggregateRow_2" target="tMap_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="agg" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="hist" lineStyle="8" metaname="hist" offsetLabelX="0" offsetLabelY="0" source="tMap_7" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="hist" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="high" lineStyle="8" metaname="tFileInputDelimited_5" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_5" target="tMap_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="high" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="low" lineStyle="8" metaname="tFileInputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_4" target="tMap_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="low" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

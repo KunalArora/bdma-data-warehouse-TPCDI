@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_y5c84PXMEeiQd5QHWK-h3g" comment="connectionComment" label="connectionLabel" dataPackage="_y5c84fXMEeiQd5QHWK-h3g"/>
+  <TalendMetadata:GenericPackage xmi:id="_y5c84fXMEeiQd5QHWK-h3g" dataManager="_y5c84PXMEeiQd5QHWK-h3g">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_y5c84vXMEeiQd5QHWK-h3g" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c84_XMEeiQd5QHWK-h3g" name="EmployeeID" id="2932" label="EmployeeID" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_y5c85PXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c85fXMEeiQd5QHWK-h3g" name="ManagerID" id="2933" label="ManagerID" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_y5c85vXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c85_XMEeiQd5QHWK-h3g" name="EmployeeFirstName" id="2934" label="EmployeeFirstName" length="12" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_y5c86PXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c86fXMEeiQd5QHWK-h3g" name="EmployeeLastName" id="2935" label="EmployeeLastName" length="13" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_y5c86vXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c86_XMEeiQd5QHWK-h3g" name="EmployeeMI" id="2936" label="EmployeeMI" length="1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_y5c87PXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c87fXMEeiQd5QHWK-h3g" name="EmployeeJobCode" id="2937" label="EmployeeJobCode" talendType="id_String">
+        <initialValue xmi:id="_y5c87vXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c87_XMEeiQd5QHWK-h3g" name="EmployeeBranch" id="2938" label="EmployeeBranch" talendType="id_String">
+        <initialValue xmi:id="_y5c88PXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c88fXMEeiQd5QHWK-h3g" name="EmployeeOffice" id="2939" label="EmployeeOffice" talendType="id_String">
+        <initialValue xmi:id="_y5c88vXMEeiQd5QHWK-h3g"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_y5c88_XMEeiQd5QHWK-h3g" name="EmployeePhone" id="2940" label="EmployeePhone" talendType="id_String">
+        <initialValue xmi:id="_y5c89PXMEeiQd5QHWK-h3g"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
